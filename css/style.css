@@ -1,6 +1,40 @@
 @import url("./fonts.css");
 @import url("./variable.css");
-p {
-    color: var(--clr-green);
-  font-family: RobotoRegular;
+@import url("./setup.css");
+
+nav {
+  background-color: var(--clr-black);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo-container > img {
+  width: 30px;
+  height: 30px;
+}
+.logo-container > h4 {
+  color: white;
+  font-family: RobotoBold;
+}
+.nav-link-container {
+  display: flex;
+  align-items: center;
+}
+.nav-link-container > a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0px 10px;
+}
+.nav-search-container {
+  padding: 15px;
+  background-color: black;
+}
+.nav-search-container > i {
+  color: white;
 }
